@@ -1,27 +1,27 @@
 # Task 1
 list_devices = []
 
-with open("devices.txt", 'r+') as file:
+with open("devices.txt", 'r+') as data:
 
-    for item in file:
+    for item in data:
         item = item.rstrip()
         list_devices.append(item)
 
 print(list_devices)
 
 # Task 2
-with open("devices.txt", 'r+') as file_2:
-    old_text = file_2.readlines()
+with open("devices.txt", 'r+') as data_2:
+    old_text = data_2.readlines()
 
-    file_2.seek(0)
-    file_2.write("THE BEGINNING!!!\n")
+    data_2.seek(0)
+    data_2.write("THE BEGINNING!!!\n")
 
     for line in old_text:
-        file_2.write(line)
+        data_2.write(line)
 
-    file_2.write("\nTHE END!!!\n")
+    data_2.write("\nTHE END!!!\n")
 
     # Printing the new file
-    file_2.seek(0)
-    for new_line in file_2:
+    data_2.seek(0)
+    for new_line in data_2:
         print(new_line.rstrip())
