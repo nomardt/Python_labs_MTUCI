@@ -1,8 +1,8 @@
 import json
 from pprint import pprint
 
-with open('interfaces.json', 'r') as data:
-    json_data = json.loads(data.read())
+with open('interfaces.json', 'r') as file_object:
+    json_data = json.loads(file_object.read())
     pprint(json_data)
 
     for interface in json_data["ietf-interfaces:interfaces"]["interface"]:

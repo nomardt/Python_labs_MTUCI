@@ -1,9 +1,9 @@
 # Task 1
 list_devices = []
 
-with open("devices.txt", 'r+') as data:
+with open("devices.txt", 'r+') as file_object:
 
-    for item in data:
+    for item in file_object:
         item = item.rstrip()
         list_devices.append(item)
 

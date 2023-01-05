@@ -1,5 +1,5 @@
-with open('show_lldp_neighbors_detail.txt', 'r') as data:
-    lines = data.readlines()
+with open('show_lldp_neighbors_detail.txt', 'r') as file_object:
+    lines = file_object.readlines()
 
     port_id_found     = False
     system_name_found = False

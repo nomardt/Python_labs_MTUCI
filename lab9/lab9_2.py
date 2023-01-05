@@ -1,7 +1,7 @@
 from pprint import pprint
 
-with open('show_vlan.txt', 'r') as data:
-    sh_vlan = data.readlines()
+with open('show_vlan.txt', 'r') as file_object:
+    sh_vlan = file_object.readlines()
     vlans = []
 
     for line_number, line in enumerate(sh_vlan):
